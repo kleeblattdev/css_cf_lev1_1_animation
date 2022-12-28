@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    height: 100vh;
+}
+
+#red {
+    background-color: red;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#green {
+    background-color: darkseagreen;
+}
+
+a {
+    display: block;
+    text-align: center;
+    padding: 2vh 2vw;
+    margin: auto;
+    text-decoration: none;
+}
+
+p {
+    text-align: center;
+}
+
+.arrow {
+    animation-name: arrowdown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes arrowdown {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    25% {
+        transform: translateY(20px);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: translateY(40px);
+        opacity: 0.6;
+    }
+
+    75% {
+        transform: translateY(60px);
+        opacity: 0.4;
+    }
+
+    100% {
+        transform: translateY(80px);
+        opacity: 0.2;
+    }
+}
+
+.arrowUp {
+    rotate: 180deg;
+    margin-top: 100px;
+    animation: arrowUp 2s linear infinite; 
+}
+
+@keyframes arrowUp {
+        0% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    25% {
+        transform: translateY(20px);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: translateY(40px);
+        opacity: 0.6;
+    }
+
+    75% {
+        transform: translateY(60px);
+        opacity: 0.4;
+    }
+
+    100% {
+        transform: translateY(80px);
+        opacity: 0.2;
+    }
+}
+
